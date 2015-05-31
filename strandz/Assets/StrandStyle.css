@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+body {background: url("images/sbk.jpg") no-repeat scroll center top #000000; color: #E4E5D9; font: 24px Georgia,"Times New Roman",Times,serif; margin: 100px 65% 40px 40px; padding: 0;}
+div.location { margin: 0 0 0 70%; padding: 40px; position: absolute;right: 0; top: 60px;}
+div.location a { color:#DFEA5F;}
+div.location a:hover {color:#FCAD48;}
+h1 { font-family: arial, serif; font-size:35px; color:#FF424F;}
+span {color:#FCAD48;}
+i {color:#FF424F;}
