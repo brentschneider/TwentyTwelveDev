@@ -27,18 +27,40 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Brand</a>
+        <a class="navbar-brand" href="#"> I <span><i class="glyphicon glyphicon-heart"></i> Dribbble </span></a>
       </div>
     </div>
   </nav>
 
 
   <div class="page-header">
-    <h1> {{name}} </h1>
+    <h1> {{title}} </h1>
+    <p>{{description}}</p>
   </div>
 
-  <div ng-controller="ShotsListCtrl">
-  </div>
+  <div ng-controller="ShotsListCtrl" >
+   
+    <ul class="list-unstyled">
+      <li class="" ng-repeat="shot in list.shots">
+        <div class="col-md-4 img-thumbnail">
+          <div class="">
+            <a href="#/shots/{{shot.id}}">
+              <img ng-src="{{ shot.image_url}}" class="img-responsive">
+            </a>
+            <strong class="title">{{shot.title}}</strong>
+            <a class="player" href="#/players/{{shot.player.username}}">
+              {{shot.player.username}}
+            </a>
+          </div>
+          <div>
+            <span><i class="glyphicon glyphicon-eye-open"></i> viewed {{ shot.views_count }} </span>
+            <span><i class="glyphicon glyphicon-heart"></i> {{ shot.likes_count }} likes </span>
+            <span><i class="glyphicon glyphicon-flash"></i>{{ shot.player.comments_count}} comments</span>
+          </div>
+        </div> <!-- end shot content-->
+      </li>
+    </ul>
+  </div> 
 
 
 </div>
