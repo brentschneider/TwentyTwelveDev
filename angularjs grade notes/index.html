@@ -38,30 +38,7 @@
     <p>{{description}}</p>
   </div>
 
-  <div ng-controller="ShotsListCtrl" >
-   
-    <ul class="list-unstyled">
-      <li class="" ng-repeat="shot in list.shots">
-        <div class="col-md-4 img-thumbnail">
-          <div class="">
-            <a href="#/shots/{{shot.id}}">
-              <img ng-src="{{ shot.image_url}}" class="img-responsive">
-            </a>
-            <strong class="title">{{shot.title}}</strong>
-            <a class="player" href="#/players/{{shot.player.username}}">
-              {{shot.player.username}}
-            </a>
-          </div>
-          <div>
-            <span><i class="glyphicon glyphicon-eye-open"></i> viewed {{ shot.views_count }} </span>
-            <span><i class="glyphicon glyphicon-heart"></i> {{ shot.likes_count }} likes </span>
-            <span><i class="glyphicon glyphicon-flash"></i>{{ shot.player.comments_count}} comments</span>
-          </div>
-        </div> <!-- end shot content-->
-      </li>
-    </ul>
-  </div> 
-
+  <div ng-view></div> 
 
 </div>
 
@@ -72,6 +49,6 @@
 <script src="js/controllers.js"></script>
 <script src="js/filters.js"></script>
 <script src="js/directives.js"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
 </body>
 </html>
