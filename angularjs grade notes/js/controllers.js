@@ -9,7 +9,9 @@ controllers.controller('AppCtrl', function($scope){
 
 })
 
-controllers.controller('ShotsListCtrl', function($scope, $routeParams, $http){
+
+// Route for 
+controllers.controller('ShotsListCtrl', function($routeParams, $scope, $http){
 
 	var list = $routeParams.list;
 	
@@ -22,6 +24,15 @@ controllers.controller('ShotsListCtrl', function($scope, $routeParams, $http){
 
 });
 
-controllers.controller('ShotsUrlCtrl', function($scope, $http){
+controllers.controller('ShotsUrlCtrl', function($routeParams, $scope, $http){
+
+	var id = $routeParams.id;
 	
-})
+	$http.jsonp('http://api.dribbble.com/shots/'+ id +'?callback=JSON_CALLBACK').then(function(data){
+
+		$scope.shots = data.data;
+		console.log(data);
+
+	})
+
+});
