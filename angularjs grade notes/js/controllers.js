@@ -2,37 +2,54 @@
 
 var controllers = angular.module('myAppCtrlr.controllers', []);
 
-controllers.controller('AppCtrl', function($scope){
+controllers.controller('AppCtrl', function ($scope){
 
 	$scope.title = "Angular & Dribbble";
 	$scope.description = "Using Angular to pull popular shots via the API from dribbble!";
 
-})
+});
 
 
 // Route for 
-controllers.controller('ShotsListCtrl', function($routeParams, $scope, $http){
+controllers.controller('ShotsListCtrl', function ($routeParams, $scope, dribbble){
 
 	var list = $routeParams.list;
-	
-	$http.jsonp('http://api.dribbble.com/shots/'+ list +'?callback=JSON_CALLBACK').then(function(data){
 
+	dribbble.list(list).then(function (data) {
 		$scope.list = data.data;
-		console.log(data);
+		// console.log(data);
+	});
 
-	})
+	// $scope.list(list, {page: $scope.list.page + 1}).then( function (data){
+	// 	console.log(data);
+
+
+	// });
+
+	$scope.loadNextPage = function () {
+
+		dribbble.list(list, {page: $scope.list.page + 1}).then(function (data){
+			
+			$scope.list.page = data.data.page;
+			$scope.list.shots = $scope.list.shots.concat(data.data.shots);
+
+		});
+	}
 
 });
 
-controllers.controller('ShotsUrlCtrl', function($routeParams, $scope, $http){
+
+
+
+controllers.controller('ShotsUrlCtrl', function($routeParams, $scope, dribbble){
 
 	var id = $routeParams.id;
-	
-	$http.jsonp('http://api.dribbble.com/shots/'+ id +'?callback=JSON_CALLBACK').then(function(data){
+
+	dribbble.shot(id).then(function (data){
 
 		$scope.shots = data.data;
-		console.log(data);
+		// console.log(data);
 
-	})
+	});
 
 });
