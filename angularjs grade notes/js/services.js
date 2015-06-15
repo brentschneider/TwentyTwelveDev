@@ -1,14 +1,19 @@
 'use strict';
 
+// services module
 var services = angular.module('myAppCtrlr.services', []);
 
-services.factory('dribbble', function ($http) {
-  function load(path, params) {
-  	params = params || {};
-  	params.callback = "JSON_CALLBACK";
-    return $http.jsonp('http://api.dribbble.com'+ path, {params: params});
-  }
+// Factory associates a name
 
+services.factory('dribbble', function ($http) {
+  
+  // takes a type and returns http jsonp call
+
+  function load (path, params) {
+    params = params || {};
+    params.callback = "JSON_CALLBACK";
+    return $http.jsonp("http://api.dribbble.com" + path, {params: params});
+  }
 
   return {
 
@@ -21,4 +26,7 @@ services.factory('dribbble', function ($http) {
 
   }
 
-})
+});
+
+
+

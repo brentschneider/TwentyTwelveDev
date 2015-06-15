@@ -12,6 +12,7 @@ filters.filter('myAppCtrlrDate', function($filter){
 		if (value) {
 			value = Date.parse(value);
 		}
+		// pas back to the filter
 		return $filter('date')(value, format);
 	}
 })

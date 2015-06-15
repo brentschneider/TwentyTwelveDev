@@ -10,7 +10,6 @@ controllers.controller('AppCtrl', function ($scope){
 });
 
 
-// Route for 
 controllers.controller('ShotsListCtrl', function ($routeParams, $scope, dribbble){
 
 	var list = $routeParams.list;
@@ -20,19 +19,14 @@ controllers.controller('ShotsListCtrl', function ($routeParams, $scope, dribbble
 		// console.log(data);
 	});
 
-	// $scope.list(list, {page: $scope.list.page + 1}).then( function (data){
-	// 	console.log(data);
-
-
-	// });
-
 	$scope.loadNextPage = function () {
 
 		dribbble.list(list, {page: $scope.list.page + 1}).then(function (data){
-			
+			console.log(data);
+			// $scope.list.page = data.data.page;
+
 			$scope.list.page = data.data.page;
 			$scope.list.shots = $scope.list.shots.concat(data.data.shots);
-
 		});
 	}
 
@@ -41,7 +35,7 @@ controllers.controller('ShotsListCtrl', function ($routeParams, $scope, dribbble
 
 
 
-controllers.controller('ShotsUrlCtrl', function($routeParams, $scope, dribbble){
+controllers.controller('ShotsUrlCtrl', function ($routeParams, $scope, dribbble){
 
 	var id = $routeParams.id;
 
