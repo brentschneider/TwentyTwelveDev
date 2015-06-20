@@ -16,3 +16,10 @@ The application will let us log in via Twitter and fetch tweets from the user ti
 ```services.js```: It’ll be used to handle the communication with OAuth.io.
 
 
+
+
+Atribute
+
+Preetish Panda
+Published May 27, 2015
+[1105](http://www.mybridge.co/view/1105)
