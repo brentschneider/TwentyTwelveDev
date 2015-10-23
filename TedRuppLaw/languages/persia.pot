@@ -1,0 +1,517 @@
+# Copyright (C) 2014 the WordPress team
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: persia 1.0\n"
+"Report-Msgid-Bugs-To: http://profiles.wordpress.org/itstar/"
+"POT-Creation-Date: 2013-12-12 05:25:07+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: 404.php:12
+msgid "Not found"
+msgstr ""
+
+#: 404.php:13
+msgid "This is somewhat embarrassing, isn&rsquo;t it?"
+msgstr ""
+
+#: 404.php:14
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: archive.php:20
+msgid " Daily Archives: %s"
+msgstr ""
+
+#: archive.php:22
+msgid " Monthly Archives: %s"
+msgstr ""
+
+#: archive.php:24
+msgid " Yearly Archives: %s"
+msgstr ""
+
+#: archive.php:26
+msgid "Archives"
+msgstr ""
+
+#: archive.php:43
+#: author.php:49
+#: category.php:36
+#: index.php:24
+#: search.php:43
+#: tag.php:40
+msgid "Page:"
+msgstr ""
+
+#: author-info.php:13
+#: author-info.php:16
+msgid "About %s"
+msgstr ""
+
+#: author.php:23
+msgid " All posts by %s"
+msgstr ""
+
+#: category.php:16
+msgid "Category Archives: %s"
+msgstr ""
+
+#: comments.php:29
+msgid "<i class=\"fa fa-reply\"></i>"
+msgstr ""
+
+#: comments.php:35
+msgid "<i class=\"fa fa-chevron-left\"></i> Older Comments"
+msgstr ""
+
+#: comments.php:36
+msgid "Newer Comments <i class=\"fa fa-chevron-right\"></i>"
+msgstr ""
+
+#: comments.php:41
+msgid "Comments are closed."
+msgstr ""
+
+#: content-aside.php:13
+#: content-audio.php:14
+#: content-chat.php:14
+#: content-gallery.php:16
+#: content-image.php:15
+#: content-link.php:14
+#: content-quote.php:13
+#: content-status.php:14
+#: content-video.php:15
+#: content.php:15
+msgid "Featured"
+msgstr ""
+
+#: content-aside.php:17
+#: content-audio.php:32
+#: content-chat.php:34
+#: content-gallery.php:34
+#: content-image.php:39
+#: content-link.php:30
+#: content-quote.php:18
+#: content-status.php:18
+#: content-video.php:32
+#: content.php:42
+#: page.php:23
+msgid "Pages:"
+msgstr ""
+
+#: content-aside.php:40
+#: content-chat.php:50
+#: content-quote.php:33
+#: content-status.php:32
+#: lib/post-meta.php:58
+msgid "Leave a comment"
+msgstr ""
+
+#: content-aside.php:40
+#: content-chat.php:50
+#: content-quote.php:33
+#: content-status.php:32
+#: lib/post-meta.php:58
+msgid "One comment so far"
+msgstr ""
+
+#: content-aside.php:40
+#: content-chat.php:50
+#: content-quote.php:33
+#: content-status.php:32
+#: lib/post-meta.php:58
+msgid "View all % comments"
+msgstr ""
+
+#: content-chat.php:27
+#: content-chat.php:30
+#: content-link.php:23
+#: content-link.php:26
+#: content.php:35
+#: content.php:38
+msgid "... Read More"
+msgstr ""
+
+#: content-none.php:12
+msgid "Nothing Found"
+msgstr ""
+
+#: content-none.php:18
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: content-none.php:22
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with "
+"different keywords."
+msgstr ""
+
+#: content-none.php:33
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: footer.php:18
+msgid "%s Copyright (C) %d . All Rights Reserved."
+msgstr ""
+
+#: footer.php:19
+msgid "Proudly powered by %1$s. Theme by %2$s."
+msgstr ""
+
+#: functions.php:49
+msgid "Header Menu"
+msgstr ""
+
+#: functions.php:50
+msgid "Responsive Menu"
+msgstr ""
+
+#: functions.php:73
+msgid "Page %s"
+msgstr ""
+
+#: functions.php:90
+msgid "Sidebar Widget Area"
+msgstr ""
+
+#: functions.php:92
+msgid "Widgets Area on Right Hand"
+msgstr ""
+
+#: functions.php:100
+msgid "Full Width Footer Widget Area"
+msgstr ""
+
+#: functions.php:102
+msgid "Shows Widgets in Full Footer Area"
+msgstr ""
+
+#: functions.php:110
+msgid "Half Width Footer Widget Area"
+msgstr ""
+
+#: functions.php:112
+msgid "Shows Widgets in Half Footer Area"
+msgstr ""
+
+#: functions.php:120
+msgid "OneThird Width Footer Widget Area"
+msgstr ""
+
+#: functions.php:122
+msgid "Shows Widgets in OneThird Footer Area"
+msgstr ""
+
+#: functions.php:195
+msgid "Audio"
+msgstr ""
+
+#: functions.php:199
+msgid "Gallery"
+msgstr ""
+
+#: functions.php:203
+msgid "Video"
+msgstr ""
+
+#: functions.php:207
+msgid "Image"
+msgstr ""
+
+#: functions.php:211
+msgid "Status"
+msgstr ""
+
+#: functions.php:215
+msgid "Link"
+msgstr ""
+
+#: functions.php:219
+msgid "Quote"
+msgstr ""
+
+#: functions.php:223
+msgid "Chat"
+msgstr ""
+
+#: functions.php:227
+msgid "Aside"
+msgstr ""
+
+#: functions.php:243
+msgid "... Read the full article"
+msgstr ""
+
+#: functions.php:270
+msgid "<i class=\"fa fa-chevron-left\"></i>"
+msgstr ""
+
+#: functions.php:271
+msgid "<i class=\"fa fa-chevron-right\"></i>"
+msgstr ""
+
+#: functions.php:299
+msgid "Recommend to use on Sticky Widget Area"
+msgstr ""
+
+#: functions.php:303
+#: functions.php:335
+msgid "Navigation"
+msgstr ""
+
+#: functions.php:340
+msgid "Title:"
+msgstr ""
+
+#: functions.php:391
+msgid "Category "
+msgstr ""
+
+#: functions.php:393
+#: functions.php:411
+#: functions.php:431
+msgid "All"
+msgstr ""
+
+#: functions.php:409
+msgid "Tag "
+msgstr ""
+
+#: functions.php:429
+msgid "Author "
+msgstr ""
+
+#: functions.php:449
+msgid "Date "
+msgstr ""
+
+#: functions.php:452
+msgid "year"
+msgstr ""
+
+#: functions.php:453
+msgid "month"
+msgstr ""
+
+#: functions.php:454
+msgid "day"
+msgstr ""
+
+#: functions.php:463
+msgid "Search for "
+msgstr ""
+
+#: functions.php:465
+msgid "Search"
+msgstr ""
+
+#: functions.php:478
+msgid "advance search"
+msgstr ""
+
+#: functions.php:482
+msgid "cancel"
+msgstr ""
+
+#: functions.php:640
+msgid "Default"
+msgstr ""
+
+#: functions.php:699
+msgid "Red"
+msgstr ""
+
+#: functions.php:700
+msgid "Blue"
+msgstr ""
+
+#: functions.php:701
+msgid "Green"
+msgstr ""
+
+#: functions.php:702
+msgid "Orange"
+msgstr ""
+
+#: functions.php:703
+msgid "Violet"
+msgstr ""
+
+#: functions.php:704
+msgid "Pink"
+msgstr ""
+
+#: functions.php:705
+msgid "Dark Blue"
+msgstr ""
+
+#: functions.php:706
+msgid "Grey"
+msgstr ""
+
+#: functions.php:756
+msgid "Fonts"
+msgstr ""
+
+#: functions.php:775
+msgid "Headers Font"
+msgstr ""
+
+#: functions.php:795
+msgid "Body Font"
+msgstr ""
+
+#: functions.php:806
+msgid "Archives Layout"
+msgstr ""
+
+#: functions.php:820
+msgid "Auto excerpt posts for Home and archive pages?"
+msgstr ""
+
+#: functions.php:824
+#: functions.php:854
+msgid "Yes"
+msgstr ""
+
+#: functions.php:825
+msgid "No, I will excerpt posts manualy"
+msgstr ""
+
+#: functions.php:835
+msgid "Featured Image"
+msgstr ""
+
+#: functions.php:850
+msgid "show featured image on single pages? "
+msgstr ""
+
+#: functions.php:855
+msgid "No"
+msgstr ""
+
+#: functions.php:865
+#: header.php:68
+msgid "Menu"
+msgstr ""
+
+#: functions.php:880
+msgid "Choose the Menu Color? "
+msgstr ""
+
+#: functions.php:898
+msgid "Choose Responsive Menu Effect? "
+msgstr ""
+
+#: page.php:25
+msgid "<i class=\"fa fa-edit\"></i>"
+msgstr ""
+
+#: search.php:20
+msgid "Search Results for: %s"
+msgstr ""
+
+#: single.php:21
+msgid "Next : "
+msgstr ""
+
+#: single.php:21
+#: single.php:22
+msgid "%title"
+msgstr ""
+
+#: single.php:22
+msgid "Previous : "
+msgstr ""
+
+#: tag.php:18
+msgid "Tag Archives: %s"
+msgstr ""
+
+#: lib/comment-form.php:8
+msgid ""
+"<span class=\"required\">Please fill the fields marked by <i class=\"fa fa-"
+"star\"></i></span>"
+msgstr ""
+
+#: lib/comment-form.php:13
+msgid "Leave a Reply"
+msgstr ""
+
+#: lib/comment-form.php:14
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: lib/comment-form.php:15
+msgid "Cancel Reply<i class=\"fa fa-times\"></i>"
+msgstr ""
+
+#: lib/comment-form.php:16
+msgid "Post Comment"
+msgstr ""
+
+#: lib/comment-form.php:18
+msgid "<i class=\"fa fa-file-text-o\"></i> Comment"
+msgstr ""
+
+#: lib/comment-form.php:19
+msgid "your message"
+msgstr ""
+
+#: lib/comment-form.php:24
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: lib/comment-form.php:30
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+msgstr ""
+
+#: lib/comment-form.php:37
+msgid "Your email address will not be published."
+msgstr ""
+
+#: lib/comment-form.php:42
+msgid ""
+"You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
+"and attributes: %s"
+msgstr ""
+
+#: lib/comment-form.php:50
+msgid "<i class=\"fa fa-user\"></i> Name"
+msgstr ""
+
+#: lib/comment-form.php:50
+msgid "yourname"
+msgstr ""
+
+#: lib/comment-form.php:56
+msgid "<i class=\"fa fa-envelope-o\"></i> Email"
+msgstr ""
+
+#: lib/comment-form.php:56
+msgid "yourname@example.com"
+msgstr ""
+
+#: lib/comment-form.php:63
+msgid "<i class=\"fa fa-globe\"></i> Website"
+msgstr ""
+
+#: lib/comment-form.php:64
+msgid "www.example.com"
+msgstr ""
+
+#: lib/post-meta.php:65
+#: lib/post-meta.php:77
+msgid " "
+msgstr ""

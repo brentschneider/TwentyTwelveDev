@@ -1,0 +1,665 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: persia v0.1.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2014-03-22 12:59:35+0000\n"
+"Last-Translator: Hamed.n <info@itstar.ir>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: Farsi\n"
+"X-Poedit-Country: IRAN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: \n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: 404.php:12
+#@ persia
+msgid "Not found"
+msgstr "موردی یافت نشد"
+
+#: 404.php:13
+#@ persia
+msgid "This is somewhat embarrassing, isn&rsquo;t it?"
+msgstr "این باعث تاسف است!"
+
+#: 404.php:14
+#@ persia
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "به نظر می رسد مطلب مورد نظر شما در این آدرس موجود نمی باشد. فرم جستجو می تواند مفید باشد!"
+
+#: archive.php:20
+#, php-format
+#@ persia
+msgid " Daily Archives: %s"
+msgstr "بایگانی روزانه :  %s"
+
+#: archive.php:22
+#, php-format
+#@ persia
+msgid " Monthly Archives: %s"
+msgstr "بایگانی ماهانه :  %s"
+
+#: archive.php:22
+#@ persia
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: archive.php:24
+#, php-format
+#@ persia
+msgid " Yearly Archives: %s"
+msgstr "بایگانی سالیانه :  %s"
+
+#: archive.php:24
+#@ persia
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: archive.php:26
+#@ persia
+msgid "Archives"
+msgstr "بایگانی ها"
+
+#: author.php:23
+#, php-format
+#@ persia
+msgid " All posts by %s"
+msgstr "تمامی مطالب  %s"
+
+#: category.php:16
+#, php-format
+#@ persia
+msgid "Category Archives: %s"
+msgstr "بایگانی دسته بندی :  %s"
+
+#: comments.php:41
+#@ persia
+msgid "Comments are closed."
+msgstr "دیدگاه ها بسته است."
+
+#: content-aside.php:17
+#: content-audio.php:32
+#: content-chat.php:34
+#: content-gallery.php:34
+#: content-image.php:39
+#: content-link.php:30
+#: content-quote.php:18
+#: content-status.php:18
+#: content-video.php:32
+#: content.php:42
+#: page.php:23
+#@ persia
+msgid "Pages:"
+msgstr "صفحه :"
+
+#: content-aside.php:40
+#: content-chat.php:50
+#: content-quote.php:33
+#: content-status.php:32
+#: lib/post-meta.php:58
+#@ persia
+msgid "Leave a comment"
+msgstr "ارسال دیدگاه"
+
+#: content-aside.php:40
+#: content-chat.php:50
+#: content-quote.php:33
+#: content-status.php:32
+#: lib/post-meta.php:58
+#@ persia
+msgid "One comment so far"
+msgstr "یک دیدگاه قدیمی"
+
+#: content-aside.php:40
+#: content-chat.php:50
+#: content-quote.php:33
+#: content-status.php:32
+#: lib/post-meta.php:58
+#@ persia
+msgid "View all % comments"
+msgstr "نمایش % دیدگاه"
+
+#: content-none.php:12
+#@ persia
+msgid "Nothing Found"
+msgstr "موردی یافت نشد."
+
+#: content-none.php:18
+#, php-format
+#@ persia
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "آیا برای ارسال اولین مطلب خود آماده هستید؟ <a href=\"%1$s\">اینجا شروع کنید!</a>."
+
+#: content-none.php:33
+#@ persia
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "به نظر می رسد می رسد مطلبی که شما به دنبال آن هستید یافت نشده است . شاید فرم جستجو مفید باشد."
+
+#: functions.php:49
+#@ persia
+msgid "Header Menu"
+msgstr "فهرست اصلی"
+
+#: functions.php:90
+#@ persia
+msgid "Sidebar Widget Area"
+msgstr "ابزارک های ستون کناری"
+
+#: functions.php:92
+#@ persia
+msgid "Widgets Area on Right Hand"
+msgstr "بخش ابزارک ها در ستون کناری سمت راست"
+
+#: functions.php:100
+#@ persia
+msgid "Full Width Footer Widget Area"
+msgstr "ابزارک های  تمام صفحه "
+
+#: functions.php:102
+#@ persia
+msgid "Shows Widgets in Full Footer Area"
+msgstr "ابزارک ها را به شکل تمام صفحه در پانوشت نمایش خواهد داد"
+
+#: functions.php:110
+#@ persia
+msgid "Half Width Footer Widget Area"
+msgstr "ابزارک های نیم صفحه"
+
+#: functions.php:112
+#@ persia
+msgid "Shows Widgets in Half Footer Area"
+msgstr "ابزارک های پانوشت را در نیمی از صفحه نمایش خواهد داد."
+
+#: functions.php:120
+#@ persia
+msgid "OneThird Width Footer Widget Area"
+msgstr "ابزارک های یک سوم"
+
+#: functions.php:122
+#@ persia
+msgid "Shows Widgets in OneThird Footer Area"
+msgstr "ابزارک های پانوشت را در یک سوم صفحه نمایش خواهد داد."
+
+#: functions.php:299
+#@ persia
+msgid "Recommend to use on Sticky Widget Area"
+msgstr "توصیه می شود در بخش ابزارک های چسبنده فعال شود."
+
+#: functions.php:303
+#: functions.php:335
+#@ persia
+msgid "Navigation"
+msgstr "راهنما"
+
+#: functions.php:340
+#@ persia
+msgid "Title:"
+msgstr "عنوان : "
+
+#: functions.php:391
+#@ persia
+msgid "Category "
+msgstr "دسته بندی"
+
+#: functions.php:393
+#: functions.php:411
+#: functions.php:431
+#@ persia
+msgid "All"
+msgstr "همه"
+
+#: functions.php:409
+#@ persia
+msgid "Tag "
+msgstr "برچسب"
+
+#: functions.php:429
+#@ persia
+msgid "Author "
+msgstr "نویسنده"
+
+#: functions.php:449
+#@ persia
+msgid "Date "
+msgstr "تاریخ"
+
+#: functions.php:452
+#@ persia
+msgid "year"
+msgstr "سال"
+
+#: functions.php:453
+#@ persia
+msgid "month"
+msgstr "ماه"
+
+#: functions.php:454
+#@ persia
+msgid "day"
+msgstr "روز"
+
+#: functions.php:463
+#@ persia
+msgid "Search for "
+msgstr "جستجو برای"
+
+#: functions.php:465
+#: functions.php:473
+#@ persia
+msgid "Search"
+msgstr "جستجو"
+
+#: functions.php:478
+#@ persia
+msgid "advance search"
+msgstr "جستجوی پیشرفته"
+
+#: lib/comment-form.php:13
+#@ persia
+msgid "Leave a Reply"
+msgstr "ارسال دیدگاه"
+
+#: lib/comment-form.php:14
+#, php-format
+#@ persia
+msgid "Leave a Reply to %s"
+msgstr "ارسال یک دیدگاه برای  %s"
+
+#: lib/comment-form.php:16
+#@ persia
+msgid "Post Comment"
+msgstr "ارسال دیدگاه"
+
+#: lib/comment-form.php:19
+#@ persia
+msgid "your message"
+msgstr "پیغام شما"
+
+#: lib/comment-form.php:24
+#, php-format
+#@ persia
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "جهت ارسال دیدگاه می بایست شما <a href=\"%s\">وارد</a> سایت شده باشید."
+
+#: lib/comment-form.php:30
+#, php-format
+#@ persia
+msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\">Log out?</a>"
+msgstr "وارد شده به عنوان <a href=\"%1$s\">%2$s</a> . <a href=\"%3$s\" title=\"خروج از این اکانت\">خروج</a>"
+
+#: lib/comment-form.php:37
+#@ persia
+msgid "Your email address will not be published."
+msgstr "آدرس ایمیل شما منتشر نخواهد شد."
+
+#: lib/comment-form.php:42
+#, php-format
+#@ persia
+msgid "You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags and attributes: %s"
+msgstr "شما می توانید از این تگهای <abbr title=\"HyperText Markup Language\">HTML</abbr> برای ارسال دیدگاه استفاده نمایید :%s"
+
+#: lib/comment-form.php:50
+#@ persia
+msgid "yourname"
+msgstr "نام شما"
+
+#: lib/comment-form.php:56
+#@ persia
+msgid "yourname@example.com"
+msgstr ""
+
+#: lib/comment-form.php:64
+#@ persia
+msgid "www.example.com"
+msgstr ""
+
+#: lib/post-meta.php:65
+#: lib/post-meta.php:77
+#@ persia
+msgid " "
+msgstr ""
+
+#: search.php:20
+#, php-format
+#@ persia
+msgid "Search Results for: %s"
+msgstr "نتایج جستجو برای : %s"
+
+#: tag.php:18
+#, php-format
+#@ persia
+msgid "Tag Archives: %s"
+msgstr "بایگانی برچسب : %s"
+
+#: functions.php:482
+#@ persia
+msgid "cancel"
+msgstr "لغو"
+
+#: functions.php:243
+#@ persia
+msgid "... Read the full article"
+msgstr "...نمایش مطلب"
+
+#: functions.php:640
+#@ persia
+msgid "Default"
+msgstr "پیش فرض"
+
+#: functions.php:756
+#@ persia
+msgid "Fonts"
+msgstr "قلم ها"
+
+#: functions.php:775
+#@ persia
+msgid "Headers Font"
+msgstr "قلم سرتیترها"
+
+#: functions.php:795
+#@ persia
+msgid "Body Font"
+msgstr "قلم بدنه"
+
+#: content-chat.php:27
+#: content-chat.php:30
+#: content-link.php:23
+#: content-link.php:26
+#: content.php:35
+#: content.php:38
+#@ persia
+msgid "... Read More"
+msgstr "... ادامه مطلب"
+
+#: functions.php:73
+#, php-format
+#@ persia
+msgid "Page %s"
+msgstr "صفحه %s"
+
+#: functions.php:806
+#@ persia
+msgid "Archives Layout"
+msgstr "چیدمان صفحات آرشیو"
+
+#: functions.php:820
+#@ persia
+msgid "Auto excerpt posts for Home and archive pages?"
+msgstr "آیا نوشته های به صورت خودکار خلاصه می شود؟"
+
+#: functions.php:824
+#: functions.php:854
+#@ persia
+msgid "Yes"
+msgstr "بله"
+
+#: functions.php:825
+#@ persia
+msgid "No, I will excerpt posts manualy"
+msgstr "نه، به صورت دستی خلاصه سازی می کنم"
+
+#: archive.php:43
+#: author.php:49
+#: category.php:36
+#: index.php:24
+#: search.php:43
+#: tag.php:40
+#@ persia
+msgid "Page:"
+msgstr "صفحه :"
+
+#: comments.php:18
+#, php-format
+#@ persia
+msgctxt "comments title"
+msgid "One Comment"
+msgid_plural "%1$s Comments"
+msgstr[0] "یک دیدگاه"
+msgstr[1] "%1$s دیدگاه"
+
+#: comments.php:29
+#@ persia
+msgid "<i class=\"fa fa-reply\"></i>"
+msgstr ""
+
+#: comments.php:35
+#@ persia
+msgid "<i class=\"fa fa-chevron-left\"></i> Older Comments"
+msgstr " <i class=\"fa fa-chevron-right\"></i>دیدگاه های قدیمی تر "
+
+#: comments.php:36
+#@ persia
+msgid "Newer Comments <i class=\"fa fa-chevron-right\"></i>"
+msgstr "دیدگاه های جدیدتر <i class=\"fa fa-chevron-left\"></i>"
+
+#: content-aside.php:13
+#: content-audio.php:14
+#: content-chat.php:14
+#: content-gallery.php:16
+#: content-image.php:15
+#: content-link.php:14
+#: content-quote.php:13
+#: content-status.php:14
+#: content-video.php:15
+#: content.php:15
+#@ persia
+msgid "Featured"
+msgstr "ویژه"
+
+#: content-none.php:22
+#@ persia
+msgid "Sorry, but nothing matched your search terms. Please try again with different keywords."
+msgstr "متاسفانه ، مطلبی منطبق با کلمات مورد نظر یافت نشد. لطفا مجددا با کلمات دیگری امتحان نمایید."
+
+#: functions.php:270
+#@ persia
+msgid "<i class=\"fa fa-chevron-left\"></i>"
+msgstr "<i class=\"fa fa-chevron-right\"></i>"
+
+#: functions.php:271
+#@ persia
+msgid "<i class=\"fa fa-chevron-right\"></i>"
+msgstr "<i class=\"fa fa-chevron-left\"></i>"
+
+#: functions.php:855
+#@ persia
+msgid "No"
+msgstr "خیر"
+
+#: lib/comment-form.php:8
+#@ persia
+msgid "<span class=\"required\">Please fill the fields marked by <i class=\"fa fa-star\"></i></span>"
+msgstr "<span class=\"required\">لطفا تمام فیلد هایی که با علامت <i class=\"fa fa-star\"></i> نشانه گذاری شده است تکمیل نمایید </span>"
+
+#: lib/comment-form.php:15
+#@ persia
+msgid "Cancel Reply<i class=\"fa fa-times\"></i>"
+msgstr "لغو دیدگاه  <i class=\"fa fa-times\"></i>"
+
+#: lib/comment-form.php:18
+#@ persia
+msgid "<i class=\"fa fa-file-text-o\"></i> Comment"
+msgstr "<i class=\"fa fa-file-text-o\"></i> دیدگاه"
+
+#: lib/comment-form.php:50
+#@ persia
+msgid "<i class=\"fa fa-user\"></i> Name"
+msgstr "<i class=\"fa fa-user\"></i> نام"
+
+#: lib/comment-form.php:56
+#@ persia
+msgid "<i class=\"fa fa-envelope-o\"></i> Email"
+msgstr "<i class=\"fa fa-envelope-o\"></i> ایمیل"
+
+#: lib/comment-form.php:63
+#@ persia
+msgid "<i class=\"fa fa-globe\"></i> Website"
+msgstr "<i class=\"fa fa-globe\"></i> وبسایت/وبلاگ"
+
+#: page.php:25
+#@ persia
+msgid "<i class=\"fa fa-edit\"></i>"
+msgstr ""
+
+#: single.php:21
+#@ persia
+msgid "Next : "
+msgstr "مطلب بعد :"
+
+#: single.php:21
+#: single.php:22
+#, php-format
+#@ persia
+msgid "%title"
+msgstr ""
+
+#: single.php:22
+#@ persia
+msgid "Previous : "
+msgstr "مطلب قبل :"
+
+#: author-info.php:13
+#: author-info.php:16
+#, php-format
+#@ persia
+msgid "About %s"
+msgstr "درباره %s"
+
+#: functions.php:195
+#@ persia
+msgid "Audio"
+msgstr "صوت"
+
+#: functions.php:199
+#@ persia
+msgid "Gallery"
+msgstr "گالری"
+
+#: functions.php:203
+#@ persia
+msgid "Video"
+msgstr "ویدئو"
+
+#: functions.php:207
+#@ persia
+msgid "Image"
+msgstr "تصویر"
+
+#: functions.php:211
+#@ persia
+msgid "Status"
+msgstr "وضعیت"
+
+#: functions.php:215
+#@ persia
+msgid "Link"
+msgstr "لینک"
+
+#: functions.php:219
+#@ persia
+msgid "Quote"
+msgstr "نقل قول"
+
+#: functions.php:223
+#@ persia
+msgid "Chat"
+msgstr "گفتگو"
+
+#: functions.php:227
+#@ persia
+msgid "Aside"
+msgstr "حاشیه"
+
+#: functions.php:835
+#@ persia
+msgid "Featured Image"
+msgstr "تصویر شاخص"
+
+#: functions.php:850
+#@ persia
+msgid "show featured image on single pages? "
+msgstr "تصاویر شاخص در صفحات تکی نمایش داده شود؟"
+
+#: functions.php:865
+#: header.php:68
+#@ persia
+msgid "Menu"
+msgstr "فهرست"
+
+#: footer.php:18
+#, php-format
+#@ persia
+msgid "%s Copyright (C) %d . All Rights Reserved."
+msgstr ""
+
+#: footer.php:19
+#, php-format
+#@ persia
+msgid "Proudly powered by %1$s. Theme by %2$s."
+msgstr ""
+
+#: functions.php:50
+#@ persia
+msgid "Responsive Menu"
+msgstr "فهرست واکنشگرا"
+
+#: functions.php:699
+#@ persia
+msgid "Red"
+msgstr "قرمز"
+
+#: functions.php:700
+#@ persia
+msgid "Blue"
+msgstr "آبی"
+
+#: functions.php:701
+#@ persia
+msgid "Green"
+msgstr "سبز"
+
+#: functions.php:702
+#@ persia
+msgid "Orange"
+msgstr "نارنجی"
+
+#: functions.php:703
+#@ persia
+msgid "Violet"
+msgstr "بنقش"
+
+#: functions.php:704
+#@ persia
+msgid "Pink"
+msgstr "صورتی"
+
+#: functions.php:705
+#@ persia
+msgid "Dark Blue"
+msgstr "سرمه ای"
+
+#: functions.php:706
+#@ persia
+msgid "Grey"
+msgstr "خاکستری"
+
+#: functions.php:880
+#@ persia
+msgid "Choose the Menu Color? "
+msgstr "رنگ فهرست را انتخاب نمایید"
+
+#: functions.php:898
+#@ persia
+msgid "Choose Responsive Menu Effect? "
+msgstr "افکت فهرست واکنشگرا را انتخاب نمایید"
+
