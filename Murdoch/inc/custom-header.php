@@ -73,8 +73,11 @@ function twentytwelve_header_style() {
 	if ( $text_color == get_theme_support( 'custom-header', 'default-text-color' ) )
 		return;
 
-	// If we get this far, we have custom styles.
+ // If we get this far, we have custom styles.
+ //
+
 	?>
+
 	<style type="text/css" id="twentytwelve-header-css">
 	<?php
 		// Has the text been hidden?
@@ -86,12 +89,20 @@ function twentytwelve_header_style() {
 			clip: rect(1px 1px 1px 1px); /* IE7 */
 			clip: rect(1px, 1px, 1px, 1px);
 		}
+
+
 	<?php
-		// If the user has set a custom color for the text, use that.
+		//
+		//  If the user has set a custom color for the text, use that.
+		//  Below $text_color defines header text color from user in theme setting
+		//
+
 		else :
 	?>
+
 		.site-header h1 a,
-		.site-header h2 {
+		.site-header h2,
+		.entry-title {
 			color: #<?php echo $text_color; ?>;
 		}
 	<?php endif; ?>

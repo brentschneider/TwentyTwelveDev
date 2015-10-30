@@ -1,11 +1,25 @@
 <?php
 /**
- * Twenty Twelve functions and definitions
- *
+ * Twenty Twelve functions and definitions * * * * * * * * * * * * * * * * * * *
  * Sets up the theme and provides some helper functions, which are used
  * in the theme as custom template tags. Others are attached to action and
  * filter hooks in WordPress to change core functionality.
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  *
+ *   Notes for Colin...
+ *
+ *    support for a custom header image - see line 95 functions .php
+ *    --> see section starting in line 39 of header.php
+ *    -- > !! Additional css set in custom-header.php
+ *    -- > See lines 85 - 110 in custom-header.php
+ *
+ *    Custom WP Navigation Walker -  see line 101 functions .php
+ *    -- > for custom nav for bootstrap navigation line 58 of header.php
+ *
+ *    Added Bootstrap JavaScript for navigation menu - line 175 functions .php
+ *
+ *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  * When using a child theme (see http://codex.wordpress.org/Theme_Development and
  * http://codex.wordpress.org/Child_Themes), you can override certain functions
  * (those wrapped in a function_exists() call) by defining them first in your child theme's
@@ -41,7 +55,7 @@ if ( ! isset( $content_width ) )
  *
  * @since Twenty Twelve 1.0
  */
-function twentytwelve_setup() {
+	function twentytwelve_setup() {
 	/*
 	 * Makes Twenty Twelve available for translation.
 	 *
@@ -82,6 +96,23 @@ add_action( 'after_setup_theme', 'twentytwelve_setup' );
  */
 require( get_template_directory() . '/inc/custom-header.php' );
 
+
+/**
+ * Registering Custom WP Navigation Walker
+ * It is located in the root.
+ */
+
+ require_once('wp_bootstrap_navwalker.php');
+	register_nav_menus( array(
+	    'primary' => __( 'Primary Menu', 'Doc Murdoch DDS' ),
+	) );
+
+
+
+	/**
+	 * END Custom WP Navigation Walker
+	 */
+
 /**
  * Return the Google font stylesheet URL if available.
  *
@@ -92,6 +123,7 @@ require( get_template_directory() . '/inc/custom-header.php' );
  *
  * @return string Font stylesheet or empty string if disabled.
  */
+
 function twentytwelve_get_font_url() {
 	$font_url = '';
 
@@ -115,12 +147,12 @@ function twentytwelve_get_font_url() {
 
 		$protocol = is_ssl() ? 'https' : 'http';
 		$query_args = array(
-			'family' => 'Open+Sans:400italic,700italic,400,700',
+
+			'family' => 'Lora|Open+Sans:400italic,700italic,400,700',
 			'subset' => $subsets,
 		);
 		$font_url = add_query_arg( $query_args, "$protocol://fonts.googleapis.com/css" );
 	}
-
 	return $font_url;
 }
 
@@ -129,6 +161,7 @@ function twentytwelve_get_font_url() {
  *
  * @since Twenty Twelve 1.0
  */
+
 function twentytwelve_scripts_styles() {
 	global $wp_styles;
 
@@ -138,9 +171,13 @@ function twentytwelve_scripts_styles() {
 	 */
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) )
 		wp_enqueue_script( 'comment-reply' );
+ /*
+  *
+	* Added Bootstrap JavaScript for handling the navigation menu
+	*
+	*/
 
-	// Adds JavaScript for handling the navigation menu hide-and-show behavior.
-	wp_enqueue_script( 'twentytwelve-navigation', get_template_directory_uri() . '/js/navigation.js', array( 'jquery' ), '20140711', true );
+	wp_enqueue_script( 'twentytwelve-navigation', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), '20160711', true );
 
 	$font_url = twentytwelve_get_font_url();
 	if ( ! empty( $font_url ) )
@@ -154,6 +191,9 @@ function twentytwelve_scripts_styles() {
 	$wp_styles->add_data( 'twentytwelve-ie', 'conditional', 'lt IE 9' );
 }
 add_action( 'wp_enqueue_scripts', 'twentytwelve_scripts_styles' );
+
+
+
 
 /**
  * Filter TinyMCE CSS path to include Google Fonts.
@@ -223,6 +263,7 @@ add_filter( 'wp_title', 'twentytwelve_wp_title', 10, 2 );
  *
  * @since Twenty Twelve 1.0
  */
+
 function twentytwelve_page_menu_args( $args ) {
 	if ( ! isset( $args['show_home'] ) )
 		$args['show_home'] = true;
@@ -237,6 +278,7 @@ add_filter( 'wp_page_menu_args', 'twentytwelve_page_menu_args' );
  *
  * @since Twenty Twelve 1.0
  */
+
 function twentytwelve_widgets_init() {
 	register_sidebar( array(
 		'name' => __( 'Main Sidebar', 'twentytwelve' ),
@@ -462,13 +504,13 @@ add_filter( 'body_class', 'twentytwelve_body_class' );
  *
  * @since Twenty Twelve 1.0
  */
-function twentytwelve_content_width() {
-	if ( is_page_template( 'page-templates/full-width.php' ) || is_attachment() || ! is_active_sidebar( 'sidebar-1' ) ) {
-		global $content_width;
-		$content_width = 960;
+	function twentytwelve_content_width() {
+		if ( is_page_template( 'page-templates/full-width.php' ) || is_attachment() || ! is_active_sidebar( 'sidebar-1' ) ) {
+			global $content_width;
+			$content_width = 960;
+		}
 	}
-}
-add_action( 'template_redirect', 'twentytwelve_content_width' );
+	add_action( 'template_redirect', 'twentytwelve_content_width' );
 
 /**
  * Register postMessage support.
@@ -479,12 +521,12 @@ add_action( 'template_redirect', 'twentytwelve_content_width' );
  *
  * @param WP_Customize_Manager $wp_customize Customizer object.
  */
-function twentytwelve_customize_register( $wp_customize ) {
-	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
-	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
-	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
-}
-add_action( 'customize_register', 'twentytwelve_customize_register' );
+	function twentytwelve_customize_register( $wp_customize ) {
+		$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
+		$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
+		$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
+	}
+	add_action( 'customize_register', 'twentytwelve_customize_register' );
 
 /**
  * Enqueue Javascript postMessage handlers for the Customizer.

@@ -30,27 +30,55 @@
 <![endif]-->
 <?php wp_head(); ?>
 </head>
-
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 	<header id="masthead" class="site-header" role="banner">
+
+<!-- * * * * * * * * * * * * * * * * * * * *
+* * * *s
+* * * * * Header Development Start
+* * * *
+* * * * * * * * * * * * * * * * * * * * -->
+
 		<hgroup>
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</hgroup>
 
+<!-- * * * * * * * * * * * * * * * * * * * *
+* * * *
+* * * * * End Header Development
+* * * *
+* * * * * * * * * * * * * * * * * * * * -->
 
-
-		<?php if ( get_header_image() ) : ?>
-		<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php header_image(); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a>
+  	<?php if ( get_header_image() ) : ?>
+	  	<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php header_image(); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a>
 		<?php endif; ?>
 
+    <!-- Start Nav -->
+		<div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header"><a class="navbar-brand" href="tel:509448-5888">(509) 448-5888 </a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse navbar-menubuilder">
+					<?php
+					 wp_nav_menu( array(
+							 'menu'              => 'primary',
+							 'theme_location'    => 'primary',
+							 'depth'             => 2,
+							 'container'         => 'ui',
+							 'container_class'   => 'nav navbar-nav navbar-left',
+							 'container_id'      => 'bs-example-navbar-collapse-1',
+							 'menu_class'        => 'nav navbar-nav',
+							 'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+							 'walker'            => new wp_bootstrap_navwalker())
+					 );
+			 	 	?>
+        </div>
+    	</div>
+		</div><!-- end Nav -->
 
-<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle"><?php _e( 'Menu', 'twentytwelve' ); ?></button>
-			<a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentytwelve' ); ?>"><?php _e( 'Skip to content', 'twentytwelve' ); ?></a>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
-
 	<div id="main" class="wrapper">
