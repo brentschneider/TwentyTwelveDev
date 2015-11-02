@@ -708,7 +708,7 @@ section[role="banner"] {
 }
 
 .textwidget {
- margin-left: 1em;
+ /*margin-left: 1em;*/
 }
 
 .widget-area .widget p {
