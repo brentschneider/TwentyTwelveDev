@@ -597,7 +597,7 @@ a:hover {
 /*--------------------------------------------------------------
 ##
 ###
-#### Header
+#### Header section
 ###
 ##
 --------------------------------------------------------------*/
@@ -615,6 +615,7 @@ a:hover {
 	margin: 0;
 	float: right;
 	width: 325px;
+	margin-top: 2em;
 }
 
 .site-header h1,
@@ -640,9 +641,10 @@ line-height: 1.2;
 
 .headlogo {
 	display: block;
+	text-indent: -9999px;
 	width: 344px;
 	height: 100px;
-	background: url(../LogoSmilesForToday.svg);
+	background: url(css/LogoSmilesForToday.svg);
   background-size: 344px 100px;
 }
 
